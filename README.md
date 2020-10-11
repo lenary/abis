@@ -13,6 +13,28 @@ resources which I deem to be at risk of disappearing.
 **Contributing:** I am happy to accept pull requests to this repository to add
 any resources or sections which are missing or incomplete.
 
+## Table of Contents
+
+  * [Table of Contents](#table-of-contents)
+  * [Introduction](#introduction)
+      * [What is an ABI?](#what-is-an-abi)
+      * [ABI Platforms](#abi-platforms)
+  * [The System V ABIs](#the-system-v-abis)
+      * [System V gABI](#system-v-gabi)
+        * [Intel Itanium C++ ABI](#intel-itanium-c-abi)
+        * [ELF Handling of Thread-Local Storage](#elf-handling-of-thread-local-storage)
+        * [DWARF](#dwarf)
+      * [Intel x86-64 psABI](#intel-x86-64-psabi)
+      * [Intel i386 psABI](#intel-i386-psabi)
+        * [Additional Intel psABIs](#additional-intel-psabis)
+      * [ARM Architecture psABIs](#arm-architecture-psabis)
+        * [Additional ARM psABIs](#additional-arm-psabis)
+      * [RISC-V psABI](#risc-v-psabi)
+      * [GNU/Linux gABI Extensions](#gnulinux-gabi-extensions)
+  * [Further Resources](#further-resources)
+
+
+
 ## Introduction
 
 ### What is an ABI?
@@ -117,7 +139,7 @@ This repository is under active development, and there are new changes every few
 
 There is a discussion forum for this ABI: https://groups.google.com/forum/#!forum/x86-64-abi
 
-### Intel i386 and IA MCU psABI
+### Intel i386 psABI
 
 This is the psABI for Intel's 32-bit i386 architecture. This architecture is
 also called "IA-32" or "x86" (without the "-64" suffix).
@@ -128,14 +150,14 @@ The i386 psABI source is available here: https://gitlab.com/x86-psABIs/i386-ABI
 
 There is a discussion forum for this ABI: https://groups.google.com/g/ia32-abi
 
-#### Misc Intel ABIs:
+#### Additional Intel psABIs
 
 *   IA-MCU psABI (Pentium without x87): https://github.com/hjl-tools/x86-psABI/wiki/iamcu-psABI-0.7.pdf
 *   IA-64 psABI (Itanium): https://refspecs.linuxfoundation.org/elf/IA64-SysV-psABI.pdf
 *   ? A 16-bit i386 ABI: https://github.com/hjl-tools/x86-psABI/wiki/intel386-psABI-16bit.pdf
 
 
-### ARM Architectures
+### ARM Architecture psABIs
 
 ARM have collected the psABIs for their 32-bit (AArch32) and 64-bit (AArch64) Architectures together.
 
@@ -151,8 +173,6 @@ The ARM psABI sources are available here: https://github.com/ARM-software/abi-aa
 
     This is one solution for running GNU/Linux on platforms where processes
     share a common address space.
-
-*   
 
 ### RISC-V psABI
 

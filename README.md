@@ -34,6 +34,7 @@ any resources or sections which are missing or incomplete.
   * [C++](#c)
   * [Rust](#rust)
   * [Swift](#swift)
+  * [Go](#go)
 * [Further Resources](#further-resources)
 
 ## Introduction
@@ -266,6 +267,11 @@ In Swift 5, the language finally shipped a stable ABI. Again, Alexis Beingessner
 has written an in-depth guide to why and how Swift 5 designed their ABI:
 https://gankra.github.io/blah/swift-abi/
 
+
+### Go
+
+Go has an ABI, but it isn't documented beyond this mailing list thread:
+https://groups.google.com/g/golang-dev/c/HDLMMYQv7Ak
 
 ## Further Resources
 

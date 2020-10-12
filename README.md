@@ -267,6 +267,10 @@ In Swift 5, the language finally shipped a stable ABI. Again, Alexis Beingessner
 has written an in-depth guide to why and how Swift 5 designed their ABI:
 https://gankra.github.io/blah/swift-abi/
 
+Often, documentation of a language's runtime can point to ABI details that
+remain otherwise un- or badly-documented. Jordan Rose has a long series on the
+Swift Runtime, starting here:
+https://belkadan.com/blog/2020/08/Swift-Runtime-Heap-Objects/
 
 ### Go
 

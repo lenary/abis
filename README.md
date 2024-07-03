@@ -87,6 +87,16 @@ also linked below.
 
 Several of the psABIs also reference two other ABIs, for historical reasons (usually because it's easier to take someone else's implementation and adapt it for your processor than come up with your own).
 
+#### GNU gABI extensions
+
+There are a number of features used by GNU toolchains (gcc / glibc / rtld) that are de facto standard regardless of the Operating System, much of which are often used even when OSABI is marked as NONE instead of GNU.
+
+Some of these replace System V gABI features. One important example is `DT_GNU_HASH`, which replaces the (per System V gABI wording, mandatory) `DT_HASH`. All ELF OSes support it, and in many distros `DT_HASH` has been deprecated for more than a decade.
+
+Many of these extensions (including `DT_GNU_HASH`) were discussed on email threads and not specified in a formal ABI document, but there's a recent-ish effort to change that: https://sourceware.org/gnu-gabi/
+
+There is a discussion forum for this ABI: https://sourceware.org/pipermail/gnu-gabi/
+
 #### ELF Handling of Thread-Local Storage
 
 The following document describes how ELF handles thread-local storage (TLS).
@@ -208,7 +218,7 @@ The current version is available here: https://github.com/hjl-tools/linux-abi/wi
 
 These are partially documented in: https://gitlab.com/x86-psABIs/Linux-ABI
 
-There is a discussion forum for this gABI: https://sourceware.org/pipermail/gnu-gabi/
+Discussion for this gABI is also handled in: https://sourceware.org/pipermail/gnu-gabi/
 
 ## Other Languages
 
